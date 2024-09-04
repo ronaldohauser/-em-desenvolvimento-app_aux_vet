@@ -1,0 +1,58 @@
+.App {
+  padding: 20px;
+  max-width: 100%;
+  margin: 0 auto;
+  background-color: #F9F9F9;
+  font-family: 'Roboto', sans-serif;
+}
+
+nav {
+  background-color: #ffffff;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+  padding: 10px 0;
+}
+
+nav ul {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  list-style: none;
+}
+
+nav ul li {
+  margin: 0 15px;
+}
+
+nav ul li a {
+  color: #4A90E2;
+  font-size: 18px;
+  padding: 10px 15px;
+  text-decoration: none;
+  border-radius: 8px;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+nav ul li a:hover {
+  background-color: #E6F7FF;
+  color: #007AFF;
+}
+
+main {
+  padding: 20px;
+}
+
+button {
+  background-color: #4A90E2;
+  color: #ffffff;
+  border: none;
+  border-radius: 8px;
+  padding: 12px 24px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+button:hover {
+  background-color: #007AFF;
+}
