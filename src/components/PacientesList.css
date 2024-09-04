@@ -1,0 +1,223 @@
+/* Estilos gerais */
+.pacientes-list-container {
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  box-sizing: border-box; 
+}
+
+.add-button {
+  background-color: #4CAF50;
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px; 
+  margin-bottom: 20px; 
+}
+
+.pacientes-list {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin-top: 20px;
+  width: 100%;
+  max-width: 1200px; 
+}
+
+.paciente-card {
+  display: flex;
+  flex-direction: column; 
+  align-items: center;
+  padding: 15px; 
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  background-color: #f9f9f9;
+  width: 100%; 
+  max-width: 300px; 
+  margin: 0 auto;
+  box-sizing: border-box; 
+}
+
+.paciente-avatar {
+  width: 100%;
+  max-width: 120px; 
+  height: auto;
+  border-radius: 50%;
+  margin-bottom: 10px; 
+  cursor: pointer;
+}
+
+.paciente-info {
+  text-align: center;
+}
+
+.button {
+  padding: 5px 10px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 14px; 
+  margin: 5px;
+}
+
+.edit-button {
+  background-color: #ffa500; 
+  color: #fff;
+}
+
+.delete-button {
+  background-color: #f44336; 
+  color: #fff;
+}
+
+.save-button, .close-button {
+  padding: 12px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+  width: 100%; 
+}
+
+.save-button {
+  background-color: #4CAF50; 
+  color: #fff;
+}
+
+.close-button {
+  background-color: #f44336; 
+  color: #fff;
+}
+
+.details-modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1000;
+}
+
+.details-modal-content {
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 10px;
+  width: 90%;
+  max-width: 500px;
+  box-sizing: border-box; 
+  display: flex;
+  flex-direction: column;
+  position: relative;
+}
+
+.modal-avatar {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  margin-bottom: 15px;
+}
+
+.close-details-button {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  background-color: #f44336; 
+  color: #fff;
+  border: none;
+  padding: 10px;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.edit-form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px; 
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.edit-form .form-group {
+  display: flex;
+  flex-direction: row; 
+  gap: 15px; 
+  align-items: center; 
+}
+
+.edit-form label {
+  flex: 1;
+  font-weight: bold;
+  color: #333;
+  margin: 0; 
+  text-align: right;
+}
+
+.edit-form input,
+.edit-form textarea {
+  flex: 2;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.edit-form input[type="file"] {
+  border: none;
+  padding: 0;
+}
+
+.edit-form textarea {
+  height: 120px;
+  resize: vertical;
+}
+
+.edit-form button {
+  margin-top: 20px;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+  width: 100%;
+}
+
+.edit-form button.save-button {
+  background-color: #4CAF50;
+  color: #fff;
+}
+
+.edit-form button.close-button {
+  background-color: #f44336;
+  color: #fff;
+}
+
+@media (max-width: 600px) {
+  .pacientes-list {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .paciente-card {
+    width: 90%;
+    max-width: none; 
+  }
+
+  .button, .save-button, .close-button {
+    width: 100%;
+    padding: 12px; 
+    font-size: 18px; 
+  }
+
+  .edit-form {
+    gap: 10px;
+  }
+}

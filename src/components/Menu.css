@@ -1,0 +1,45 @@
+nav {
+  width: 100%;
+  height: calc(100vh - 60px);
+  background: #333;
+  padding: 20px;
+  box-sizing: border-box;
+  position: fixed;
+  top: 60px;
+  left: 0;
+  overflow-y: auto;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+li {
+  margin: 15px 0;
+}
+
+button {
+  width: 100%;
+  background: #444;
+  color: #fff;
+  border: none;
+  padding: 20px;
+  font-size: 1.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  box-sizing: border-box;
+  transition: background 0.3s;
+}
+
+button:hover {
+  background: #555;
+}
+
+button svg {
+  font-size: 2rem;
+  margin-right: 10px;
+}

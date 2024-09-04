@@ -1,0 +1,158 @@
+/* Estilo geral para o calendário */
+.calendario {
+  font-family: Arial, sans-serif;
+  width: 100%;
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+button {
+  font-size: 18px;
+  border: none;
+  background-color: #007bff; /* Azul claro */
+  color: white;
+  padding: 10px 20px;
+  border-radius: 4px;
+  cursor: pointer;
+  margin: 5px;
+}
+
+button:hover {
+  background-color: #0056b3; /* Azul mais escuro para o hover */
+}
+
+button:active {
+  background-color: #004080; /* Azul ainda mais escuro quando pressionado */
+}
+
+.days-of-week {
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  gap: 5px;
+  margin-bottom: 10px;
+}
+
+.day-of-week {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 30px;
+  font-weight: bold;
+}
+
+.days {
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  gap: 5px;
+  margin-bottom: 20px;
+}
+
+.day {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 50px;
+  border: 1px solid #ddd;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.day.selected {
+  background-color: #007bff;
+  color: white;
+  border-radius: 50%;
+}
+
+.compromissos {
+  margin-top: 20px;
+}
+
+.compromissos h3 {
+  margin-bottom: 10px;
+}
+
+.compromissos ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.compromissos li {
+  padding: 5px 0;
+  border-bottom: 1px solid #ddd;
+}
+
+.compromissos button {
+  margin-top: 10px;
+  background-color: #007bff; /* Azul claro */
+  color: white;
+}
+
+.compromissos button:hover {
+  background-color: #0056b3; /* Azul mais escuro para o hover */
+}
+
+.modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.modal-content {
+  background: white;
+  padding: 20px;
+  border-radius: 4px;
+  width: 300px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.modal-content h2 {
+  margin-top: 0;
+}
+
+.modal-content input {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 10px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+}
+
+.modal-content button {
+  font-size: 16px;
+  padding: 10px;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.modal-content button:hover {
+  opacity: 0.9;
+}
+
+.modal-content button.cancelar {
+  background-color: #dc3545; /* Vermelho para o botão de cancelar */
+  color: white;
+  margin-left: 10px;
+}
+
+.modal-content button.cancelar:hover {
+  background-color: #c82333; /* Vermelho mais escuro para o hover */
+}
+
+.modal-content button.cancelar:active {
+  background-color: #bd2130; /* Vermelho ainda mais escuro quando pressionado */
+}

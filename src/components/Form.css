@@ -1,0 +1,65 @@
+/* Form.css */
+.form-modal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 1000;
+  }
+  
+  .form-modal-content {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    width: 90%;
+    max-width: 500px;
+    box-sizing: border-box; 
+    display: flex;
+    flex-direction: column;
+    position: relative;
+  }
+  
+  .form-modal label {
+    margin-bottom: 10px;
+  }
+  
+  .form-modal input,
+  .form-modal textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+  }
+  
+  .form-modal textarea {
+    height: 120px;
+    resize: vertical;
+  }
+  
+  .form-save-button,
+  .form-close-button {
+    padding: 12px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    width: 100%;
+    margin-top: 10px;
+  }
+  
+  .form-save-button {
+    background-color: #4CAF50;
+    color: #fff;
+  }
+  
+  .form-close-button {
+    background-color: #f44336;
+    color: #fff;
+  }
+  

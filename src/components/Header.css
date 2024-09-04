@@ -1,0 +1,33 @@
+/* src/components/Header.css */
+header {
+  background: #333;
+  color: #fff;
+  padding: 10px;
+  text-align: center;
+  width: 100vw;
+  box-sizing: border-box;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1000;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 60px;
+}
+
+.header-content {
+  display: flex;
+  align-items: center;
+  width: 100%;
+}
+
+.header .back-button {
+  display: none;
+}
+
+header h1 {
+  margin: 0;
+  flex: 1;
+  text-align: center;
+}
