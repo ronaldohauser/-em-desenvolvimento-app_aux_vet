@@ -1,70 +1,115 @@
-# Getting Started with Create React App
+# AppAuxVet
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## Descrição
 
-## Available Scripts
+**AppAuxVet** é um aplicativo desenvolvido para auxiliar profissionais da área veterinária no gerenciamento de suas tarefas diárias, agendas, comunicação com clientes e acesso a informações úteis, como guias práticos e casos clínicos. O objetivo é criar uma ferramenta eficiente que contribua para a organização e a melhoria dos serviços oferecidos pelos auxiliares veterinários.
 
-In the project directory, you can run:
+## Funcionalidades
 
-### `npm start`
+### Sprint 1: Estrutura Inicial e Interface do Usuário
+- Configuração do ambiente de desenvolvimento
+- Criação da estrutura do projeto
+- Desenvolvimento da página inicial (Dashboard) com resumo das atividades e acesso rápido
+- Desenvolvimento da estrutura de navegação com um menu principal
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+### Sprint 2: Funcionalidades Essenciais para Pacientes e Agenda
+- Listagem e visualização de pacientes
+- Visualização do calendário
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+### Sprint 3: Interatividade e Adição de Novos Dados
+- Adicionar novo paciente
+- Adicionar evento à agenda
+- Gerenciamento de inventário (medicamentos e insumos)
 
-### `npm test`
+### Sprint 4: Guias e Procedimentos
+- Guias práticos de procedimentos comuns e cuidados diários
+- Guia de raças de cães e gatos
+- Guia de doenças comuns em cães e gatos
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+### Sprint 5: Comunicação e Tarefas
+- Comunicação com clientes via notificações
+- Sistema de feedback e avaliação
+- Lista de tarefas e criação de tarefas
 
-### `npm run build`
+### Sprint 6: Funcionalidades Avançadas
+- Banco de casos clínicos
+- Mapa interativo com clínicas veterinárias e serviços de emergência
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+### Sprint 7: Funcionalidades Administrativas e Relatórios
+- Gestão de documentos
+- Relatórios de atendimentos
+- Biblioteca de recursos para educação contínua
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+### Sprint 8: Funcionalidades de Comunidade e Suporte
+- Fórum de discussão e grupos de estudo
+- Programas de bem-estar para auxiliares
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+### Sprint 9: Finalização e Ajustes
+- Comunicação interna entre usuários
+- Procedimentos de emergência e contato de emergência
+- Configurações de perfil de usuário e preferências
+- Ajuda e suporte com FAQs e contato para suporte
 
-### `npm run eject`
+## Tecnologias Utilizadas
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+- **Frontend:** React.js, Bootstrap
+- **Backend:** Spring Boot
+- **Banco de Dados:** PostgreSQL, MongoDB
+- **Gerenciamento de Estado:** Redux
+- **Autenticação:** JWT (JSON Web Tokens)
+- **Mapas:** Leaflet.js para mapas interativos
+- **Comunicação:** WebSockets para notificações em tempo real
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+## Configuração do Ambiente
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+1. Clone o repositório:
+    ```sh
+    git clone https://github.com/seu-usuario/app_aux_vet.git
+    ```
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+2. Navegue até o diretório do projeto:
+    ```sh
+    cd app_aux_vet
+    ```
 
-## Learn More
+3. Instale as dependências do frontend:
+    ```sh
+    cd frontend
+    npm install
+    ```
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+4. Instale as dependências do backend:
+    ```sh
+    cd backend
+    ./mvnw install
+    ```
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+5. Configure o banco de dados no arquivo `application.properties` no diretório `src/main/resources` do backend.
 
-### Code Splitting
+6. Execute o backend:
+    ```sh
+    ./mvnw spring-boot:run
+    ```
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+7. Execute o frontend:
+    ```sh
+    npm start
+    ```
 
-### Analyzing the Bundle Size
+## Contribuição
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+1. Faça um fork do projeto
+2. Crie uma branch para sua feature (`git checkout -b feature/fooBar`)
+3. Faça commit das suas alterações (`git commit -am 'Add some fooBar'`)
+4. Faça o push para a branch (`git push origin feature/fooBar`)
+5. Crie um novo Pull Request
 
-### Making a Progressive Web App
+## Licença
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+Distribuído sob a licença MIT. Veja `LICENSE` para mais informações.
 
-### Advanced Configuration
+## Contato
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+Ronaldo Hauser Dias - [duqueronaldo@icloud.com](mailto:duqueronaldo@icloud.com)
 
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+Projeto Link: [https://github.com/seu-usuario/app_aux_vet](https://github.com/seu-usuario/app_aux_vet)
